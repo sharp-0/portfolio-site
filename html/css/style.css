@@ -8,19 +8,21 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   background-color: orange;
 }
 
 .site-title > a {
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 1.8rem;
   color: white;
   text-decoration: none;
 }
 
 .links {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   list-style: none;
 }
 
@@ -31,19 +33,29 @@ body {
   height: 40px;
   text-align: center;
   padding-top: 10px;
+  margin-inline: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 1.2rem;
   text-decoration: none;
-  border-right: white 2px solid;
-}
-
-.links > li:nth-child(1) > a {
-  width: 142px;
-  border-left: white 2px solid;
+  border-inline: white 2px solid;
 }
 
 .main {
   box-sizing: border-box;
   width: 100%;
   padding: 15px 80px;
+}
+
+.menu > ul {
+  list-style: none;
+}
+
+.menu > ul > li {
+  margin: 4px;
+}
+
+.menu > ul > li > a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
 }
